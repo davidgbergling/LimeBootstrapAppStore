@@ -29,13 +29,13 @@ Create two localize posts. Owner should be businessfunnel and code should be "al
 Following field need to be implemented in the database:
 
 *	 businessvalue (integer or decimal field)
-*	 businessvalue (option field with different values, set key values also)
+*	 businesstatus (option field with different values, set key values also)
 *	 coworker (relation field to coworker table)
 
 ###The standard configuration for the business funnel is:
 
 *	currency = "tkr" - Set the currency for the pipeline
-*	divider = 1000 - Devides the values with 1000 (tusentals avgränsare)
+*	divider = 1000 - Divides the values with 1000 (tusentals avgränsare)
 *	decimals = 0 - Number of decimals shown 
 *	name = "Pipeline" - Name of the container
 *	removeStatus:[] - Statuses can be remoeved by key on the optionfield businessstatus
@@ -65,7 +65,7 @@ The customer want the currency in "kr" and they only have small deals so they do
 	
 
 ####Example 2
-The customer want the currency in NOK and thet always use million NOK as value
+The customer want the currency in NOK and then always use million NOK as value
 
 *	currency = "NOK"
 *	divider = 1 000 000 
@@ -76,7 +76,7 @@ The customer want the currency in NOK and thet always use million NOK as value
 ```
 
 ####Example 3
-The customer want the currency in EURO and no devider, status onhold and rejection should not be shown and the colors to be used is picked by the customer.
+The customer want the currency in EURO and no divider, status onhold and rejection should not be shown and the colors to be used is picked by the customer.
 
 *	currency = "€"
 *	divider = 1
